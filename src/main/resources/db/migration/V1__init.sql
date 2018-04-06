@@ -22,3 +22,9 @@ CREATE TABLE bots_owners (
   owner_id BIGINT REFERENCES owner(id),
   PRIMARY KEY (bot_id, owner_id)
 );
+
+INSERT INTO owner VALUES (1, 'miata');
+INSERT INTO owner VALUES (2, 'is');
+INSERT INTO owner VALUES (3, 'always');
+INSERT INTO owner VALUES (4, 'the');
+INSERT INTO owner VALUES (5, 'answer');
