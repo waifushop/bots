@@ -17,6 +17,6 @@ public class Owner {
     private long id;
     private String name;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany
     private List<Bot> bots = new ArrayList<>();
 }

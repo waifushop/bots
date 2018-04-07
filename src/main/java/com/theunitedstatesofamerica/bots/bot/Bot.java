@@ -25,6 +25,6 @@ public class Bot {
     private String library;
     private String avatar_hash;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany
     private List<Owner> owners = new ArrayList<>();
 }
