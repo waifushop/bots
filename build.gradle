@@ -33,6 +33,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-websocket')
     compile('org.hibernate:hibernate-core')
 	compile('org.flywaydb:flyway-core')
+	compile('com.squareup.okhttp3:okhttp:3.10.0')
 	runtime('org.springframework.boot:spring-boot-devtools')
     runtime('org.postgresql:postgresql:42.2.1')
 	runtime('com.h2database:h2')

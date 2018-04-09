@@ -11,8 +11,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan("com.theunitedstatesofamerica.bots")
-@EnableJpaRepositories("com.theunitedstatesofamerica.bots")
 public class BotsApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(BotsApplication.class, args);

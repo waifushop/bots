@@ -1,5 +1,7 @@
 package com.theunitedstatesofamerica.bots.owner;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin
 @Component
 public class OwnerResource {
 
@@ -26,7 +29,7 @@ public class OwnerResource {
     }
 
     @RequestMapping(value = "/owners/{id}", method = RequestMethod.PUT)
-    public Owner update(Owner owner) {
+    public Owner update(@RequestBody @Valid Owner owner) {
         return ownerService.update(owner);
     }
 }
